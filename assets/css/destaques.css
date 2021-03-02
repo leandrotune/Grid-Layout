@@ -1,0 +1,83 @@
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.destaques {
+    display: grid;
+    grid-gap: .2rem ;      /*criar um espaço 2rem de um bloco para outro: criar uma margem */
+    grid-template-columns: 25% 25% 25% 25%;    /*quatro colunas cada uma com 25% que da 100%  */ 
+    grid-template-rows: 33.33% 33.33% 33.33%;  /* três linhas com 33.33% cada que da 99.99% */
+    height: calc(100vh - 50px);                /* nesse casso locoquei a altura 100vh - 50px do cabeçalho*/
+    /* se colocasse só 100vh ele pegaria o cabeçalho também, por isso coloque 100vh - 50px para ele tira os 50px*/
+}
+
+/*alinhar o titulo de cada bloco */
+.destaques__titulo {
+    background: rgba(0, 0, 0, .5);
+    color: #fdfdfd;
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* cada imagem colocada em seu determinado espaço  */
+.destaques__principal {                                      
+    background: url('../img/fortnite.jpg') center / cover no-repeat;   
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+.destaques__secundario:nth-child(2) {        /*peseudo class: nth-cheild(2) pelo pelo número do filho */
+    background: url('../img/pubg.jpg') center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+}
+
+.destaques__secundario:nth-child(3) {        /*peseudo class: nth-cheild(3) pelo pelo número do filho */
+    background: url('../img/slack.png') center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row:  2 / 2;
+}
+
+.destaques__secundario:nth-child(4) {         /*peseudo class: nth-cheild(4) pelo pelo número do filho */
+    background: url('../img/whatsapp.png') center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+
+.destaques__secundario:nth-child(5) {         /*peseudo class: nth-cheild(5) pelo pelo número do filho */
+    background: url('../img/cs-go.jpg') center / cover no-repeat;
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+}
+/* espaço preenchido pelo menu de destaques: colunas e linhas */
+.destaques__categorias {
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+}
+
+/* alinhamento da lista de menu do destaque com flexbox */
+.destaques__categorias___lista {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+
+/* alinhamento da lista de menu do destaque com flexbox e algumas formatações*/
+.destaques__categorias___item {
+    display: flex;
+    align-items: center;
+    background: #fdfdfd;
+    border-left: 5px solid transparent;
+    color: #333333;
+    padding: 1rem;
+    width: 50%;
+}
+
+.destaques__categorias___link {
+    color: inherit;             /* vai herdar do pai: a cor dele */
+}
+

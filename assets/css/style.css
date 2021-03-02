@@ -1,0 +1,26 @@
+.app {
+    background: #f1f1f1;
+    display: grid;     /*usar o css grid layout */
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas:    /*nomes das areas do grid layout  */
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-columns: auto;  /*define as colunas do grid automaticas */ 
+    grid-template-rows: 50px 100vh auto;/*define tamanho das linhas do grid de cada area*/ 
+    /* 50px cabecalho : 100vh conteudo, 100% da tela :  auto rodape, automatico do tamanho do seu conteúdo*/
+
+    
+}
+
+.cabecalho {
+    grid-area: cabecalho;  /* diz para class header ficar na area grid cabecalho*/
+}
+ 
+.conteudo {
+    grid-area: conteudo;   /* diz para class main ficar na area grid conteudo */
+}
+
+.rodape {
+    grid-area: rodape;  /* diz para class footer ficar na area grid rodape */
+}
