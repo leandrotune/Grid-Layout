@@ -1,0 +1,30 @@
+.populares {
+    padding: 3rem 0; 
+}
+
+.populares__card {
+    background: #fdfdfd;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "card-imagem"
+        "card-corpo";
+}
+
+
+.populares__card___imagem {
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+.populares__card___corpo {
+    display: grid;
+    grid-gap: 5rem;
+    grid-area: card-corpo;
+    grid-template-areas: 
+        "card-cabecalho"
+        "card =-conteudo";
+    padding: 75rem;
+
+}

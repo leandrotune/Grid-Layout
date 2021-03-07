@@ -9,8 +9,6 @@
     grid-template-columns: auto;  /*define as colunas do grid automaticas */ 
     grid-template-rows: 50px 100vh auto;/*define tamanho das linhas do grid de cada area*/ 
     /* 50px cabecalho : 100vh conteudo, 100% da tela :  auto rodape, automatico do tamanho do seu conteúdo*/
-
-    
 }
 
 .cabecalho {
