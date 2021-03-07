@@ -12,6 +12,9 @@
 }
 
 .cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
     grid-area: cabecalho;  /* diz para class header ficar na area grid cabecalho*/
 }
  
