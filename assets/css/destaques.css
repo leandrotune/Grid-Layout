@@ -25,36 +25,27 @@
 /* cada imagem colocada em seu determinado espaço  */
 .destaques__principal {                                      
     background: url('../img/fortnite.jpg') center / cover no-repeat;   
-    grid-column: 1 / 4;
     grid-row: 1 / 3;
 }
 
 .destaques__secundario:nth-child(2) {        /*peseudo class: nth-cheild(2) pelo pelo número do filho */
     background: url('../img/pubg.jpg') center / cover no-repeat;
-    grid-column: 4 / 4;
-    grid-row: 1 / 1;
 }
 
 .destaques__secundario:nth-child(3) {        /*peseudo class: nth-cheild(3) pelo pelo número do filho */
     background: url('../img/slack.png') center / cover no-repeat;
-    grid-column: 4 / 4;
-    grid-row:  2 / 2;
 }
 
 .destaques__secundario:nth-child(4) {         /*peseudo class: nth-cheild(4) pelo pelo número do filho */
     background: url('../img/whatsapp.png') center / cover no-repeat;
-    grid-column: 4 / 4;
-    grid-row: 3 / 3;
 }
 
 .destaques__secundario:nth-child(5) {         /*peseudo class: nth-cheild(5) pelo pelo número do filho */
     background: url('../img/cs-go.jpg') center / cover no-repeat;
-    grid-column: 3 / 3;
-    grid-row: 3 / 3;
 }
+
 /* espaço preenchido pelo menu de destaques: colunas e linhas */
 .destaques__categorias {
-    grid-column: 1 / 3;
     grid-row: 3 / 3;
 }
 
